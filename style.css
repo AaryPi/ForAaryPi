@@ -28,25 +28,17 @@ h1 {
 }
 
 /* Parallax container styles */
-.parallax-container {
-    position: relative;
-    overflow: hidden;
+.parallax {
+    display: flex;
+    width: 100%; /* Ensure all images are side by side */
     height: 100vh; /* Set the height to viewport height */
 }
 
-/* Parallax effect styles */
-.parallax {
-    display: flex;
-    width: 300%; /* Ensure all images are side by side */
-    height: 100%;
-}
-
 /* Parallax image styles */
-.parallax img {
-    width: calc(100% / 3); /* Divide the width equally for three images */
-    height: auto;
-    object-fit: cover;
-    transform: translateZ(0); /* Prevent image blurring */
+.parallax-image {
+    flex: 1; /* Distribute equal space among images */
+    background-size: cover;
+    background-position: center;
 }
 
 /* Container styles */
