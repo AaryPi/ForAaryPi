@@ -9,6 +9,7 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #f9f9f9;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
 /* Header styles */
@@ -59,31 +60,19 @@ footer {
 /* Parallax container */
 .parallax-container {
     display: flex;
-    overflow-x: auto; /* Allow horizontal scrolling */
-    width: 300%; /* Ensure enough width to accommodate all images */
+    flex-direction: column; /* Stack images vertically */
     height: 100vh; /* Set height to fill the entire viewport */
 }
 
 /* Parallax image */
 .parallax-image {
     flex: 1;
-    height: 100%; /* Ensure image fills the entire viewport height */
     overflow: hidden;
 }
 
 .parallax-image img {
-    width: 100%; /* Stretch image to fill the entire width of its container */
-    height: 100%; /* Ensure aspect ratio is maintained */
+    width: 100%;
+    height: 100%;
     object-fit: cover; /* Cover the entire container, maintaining aspect ratio */
     transform: translateZ(0); /* Ensure hardware acceleration for smoother scrolling */
-}
-
-/* Keyframes for waterfall animation */
-@keyframes waterfall {
-    0% {
-        transform: translateY(-100%);
-    }
-    100% {
-        transform: translateY(300%); /* Adjust this value based on the number of images */
-    }
 }
