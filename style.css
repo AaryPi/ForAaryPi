@@ -42,8 +42,8 @@ h1 {
 }
 
 .heart-image {
-    max-width: 100%;
-    height: auto;
+    width: 100%; /* Adjust this value as needed */
+    height: auto; /* Maintain aspect ratio */
     position: absolute;
     top: 0;
     left: 0;
