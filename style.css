@@ -51,10 +51,6 @@ h1 {
     background-attachment: fixed; /* Ensure the background image remains fixed while scrolling */
 }
 
-.parallax-image img {
-    display: none; /* Hide the actual image element */
-}
-
 /* Set the background image */
 .parallax-image:nth-child(1) {
     background-image: url('images/valentine1.jpg');
