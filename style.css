@@ -37,12 +37,13 @@ h1 {
 /* Parallax effect styles */
 .parallax {
     display: flex;
+    width: 300%; /* Ensure all images are side by side */
     height: 100%;
 }
 
 /* Parallax image styles */
 .parallax img {
-    width: 100%;
+    width: calc(100% / 3); /* Divide the width equally for three images */
     height: auto;
     object-fit: cover;
     transform: translateZ(0); /* Prevent image blurring */
