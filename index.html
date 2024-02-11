@@ -4,92 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Happy Valentine's Day!</title>
-    <style>
-        /* Reset default margin and padding */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        /* Set body background */
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #f9f9f9;
-        }
-
-        /* Header styles */
-        header {
-            background: linear-gradient(to right, #ff4b2b, #ff416c);
-            color: white;
-            text-align: center;
-            padding: 20px 0;
-        }
-
-        /* Title styles */
-        h1 {
-            font-size: 3rem;
-            margin-bottom: 10px;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-        }
-
-        /* Container styles */
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            text-align: center;
-            padding: 20px;
-        }
-
-        /* Heart image styles */
-        .heart-container {
-            margin-bottom: 30px;
-            position: relative;
-            overflow: hidden;
-            width: 100%; /* Adjust this value as needed */
-        }
-
-        .heart-image {
-            width: 100%;
-            height: auto;
-            position: absolute;
-            top: 0;
-            left: 0;
-            animation: waterfall 10s infinite linear;
-        }
-
-        /* Personalized message section styles */
-        .message-section {
-            background-color: #fff;
-            border-radius: 10px;
-            padding: 30px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            margin-bottom: 30px;
-        }
-
-        /* Signature styles */
-        .signature {
-            margin-top: 20px;
-        }
-
-        /* Footer styles */
-        footer {
-            background: linear-gradient(to right, #ff4b2b, #ff416c);
-            color: white;
-            text-align: center;
-            padding: 10px 0;
-        }
-
-        /* Keyframes for waterfall animation */
-        @keyframes waterfall {
-            0% {
-                transform: translateY(-100%);
-            }
-            100% {
-                transform: translateY(100%);
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
@@ -97,8 +12,16 @@
     </header>
     <main>
         <div class="container">
-            <div class="heart-container">
-                <img src="images/valentine.jpg" alt="Valentine's Day" class="heart-image">
+            <div class="parallax-container">
+                <div class="parallax-image">
+                    <img src="images/valentine1.jpg" alt="Valentine's Day">
+                </div>
+                <div class="parallax-image">
+                    <img src="images/valentine2.jpg" alt="Valentine's Day">
+                </div>
+                <div class="parallax-image">
+                    <img src="images/valentine3.jpg" alt="Valentine's Day">
+                </div>
             </div>
             <div class="message-section">
                 <h2>Your Personalized Message:</h2>
@@ -114,5 +37,6 @@
     <footer>
         <p>© 2024 YourValentine.com</p>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
