@@ -8,7 +8,7 @@
 /* Set body background */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f9f9f9;
+    background: linear-gradient(120deg, #f6d365, #fda085); /* Gradient background */
 }
 
 /* Header styles */
@@ -66,7 +66,7 @@ h1 {
 
 /* Personalized message section styles */
 .message-section {
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
     border-radius: 10px;
     padding: 30px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
