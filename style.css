@@ -13,18 +13,19 @@ body {
 }
 
 /* Header styles */
-header {
-    background: linear-gradient(to right, #ff4b2b, #ff416c);
-    color: white;
+.header {
+    background-color: #f4f4f4; /* Light gray background */
+    color: #333; /* Dark gray text color */
     text-align: center;
     padding: 20px 0;
 }
 
-/* Title styles */
-h1 {
-    font-size: 3rem;
-    margin-bottom: 10px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+/* Footer styles */
+.footer {
+    background-color: #f4f4f4; /* Light gray background */
+    color: #333; /* Dark gray text color */
+    text-align: center;
+    padding: 10px 0;
 }
 
 /* Parallax container styles */
