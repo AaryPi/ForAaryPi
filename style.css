@@ -26,6 +26,27 @@ h1 {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
+/* Parallax container styles */
+.parallax-container {
+    position: relative;
+    overflow: hidden;
+    height: 500px; /* Adjust height as needed */
+}
+
+/* Parallax effect styles */
+.parallax {
+    display: flex;
+    height: 100%;
+}
+
+/* Parallax image styles */
+.parallax img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    transform: translateZ(0); /* Prevent image blurring */
+}
+
 /* Container styles */
 .container {
     max-width: 100%; /* Allow the container to fill the entire screen width */
@@ -35,36 +56,7 @@ h1 {
     overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
-/* Parallax images container */
-.parallax-images {
-    position: relative; /* Needed for absolute positioning of images */
-    display: flex;
-    overflow-x: hidden; /* Hide horizontal overflow */
-}
-
-/* Parallax image */
-.parallax-image {
-    position: relative;
-    width: 100%; /* Ensure each image takes up the full container width */
-    height: auto;
-    overflow: hidden;
-    background-attachment: fixed; /* Ensure the background image remains fixed while scrolling */
-}
-
-/* Set the background image */
-.parallax-image:nth-child(1) {
-    background-image: url('images/valentine1.jpg');
-}
-
-.parallax-image:nth-child(2) {
-    background-image: url('images/valentine4.jpg'); /* Replace valentine2 with valentine4 */
-}
-
-.parallax-image:nth-child(3) {
-    background-image: url('images/valentine3.jpg');
-}
-
-/* Personalized message section styles */
+/* Message section styles */
 .message-section {
     background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
     border-radius: 10px;
