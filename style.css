@@ -43,7 +43,7 @@ h1 {
 /* Parallax image */
 .parallax-image {
     flex: 0 0 auto;
-    width: 100%; /* Ensure each image takes up the full container width */
+    width: calc(100% / 3); /* Ensure each image takes up one-third of the container width */
     height: auto;
     overflow: hidden;
 }
