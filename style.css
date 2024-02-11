@@ -26,18 +26,25 @@ h1 {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-/* Parallax container */
-.parallax-container {
+/* Container styles */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Parallax images container */
+.parallax-images {
     display: flex;
-    overflow-x: auto; /* Allow horizontal scrolling */
-    height: 100vh; /* Set height to fill the entire viewport */
+    overflow-x: auto; /* Allow horizontal scrolling if needed */
 }
 
 /* Parallax image */
 .parallax-image {
     flex: 0 0 auto;
-    width: 100vw; /* Ensure each image takes up the full viewport width */
-    height: 100vh; /* Ensure each image fills the entire viewport height */
+    width: 100%; /* Ensure each image takes up the full container width */
+    height: auto;
     overflow: hidden;
 }
 
@@ -48,20 +55,13 @@ h1 {
     transform: translateZ(0); /* Ensure hardware acceleration for smoother scrolling */
 }
 
-/* Container styles */
-.container {
-    max-width: 800px;
-    margin: 0 auto;
-    text-align: center;
-    padding: 20px;
-}
-
 /* Personalized message section styles */
 .message-section {
     background-color: #fff;
     border-radius: 10px;
     padding: 30px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 30px; /* Adjust as needed */
     margin-bottom: 30px;
 }
 
