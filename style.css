@@ -31,6 +31,7 @@ h1 {
     max-width: 800px;
     margin: 0 auto;
     text-align: center;
+    padding: 20px;
 }
 
 /* Heart image styles */
@@ -75,4 +76,11 @@ footer {
     100% {
         transform: scale(1.1);
     }
+}
+
+/* Main section styles */
+main {
+    background: linear-gradient(to bottom, #fff, #f9f9f9);
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
