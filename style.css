@@ -48,20 +48,13 @@ h1 {
     width: 100%; /* Ensure each image takes up the full container width */
     height: auto;
     overflow: hidden;
-    background-attachment: fixed; /* Ensure the background image remains fixed while scrolling */
 }
 
-/* Set the background image */
-.parallax-image:nth-child(1) {
-    background-image: url('images/valentine1.jpg');
-}
-
-.parallax-image:nth-child(2) {
-    background-image: url('images/valentine4.jpg'); /* Replace valentine2 with valentine4 */
-}
-
-.parallax-image:nth-child(3) {
-    background-image: url('images/valentine3.jpg');
+.parallax-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Cover the entire container, maintaining aspect ratio */
+    transform: translateZ(0); /* Ensure hardware acceleration for smoother scrolling */
 }
 
 /* Personalized message section styles */
