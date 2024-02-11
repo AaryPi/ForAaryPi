@@ -1,14 +1,20 @@
-/* Reset default margin and padding */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* Parallax container */
+.parallax-container {
+    display: flex;
+    overflow-x: hidden;
 }
 
-/* Set body background */
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f9f9f9;
+/* Parallax image */
+.parallax-image {
+    flex: 1;
+    height: 100vh; /* Adjust as needed */
+    overflow: hidden;
+}
+
+.parallax-image img {
+    width: 100%;
+    height: auto;
+    transform: translateZ(0); /* Ensure hardware acceleration for smoother scrolling */
 }
 
 /* Header styles */
@@ -34,20 +40,6 @@ h1 {
     padding: 20px;
 }
 
-/* Heart image styles */
-.heart-container {
-    margin-bottom: 30px;
-    position: relative;
-    overflow: hidden;
-    width: 100%; /* Adjust this value as needed */
-}
-
-.heart-image {
-    width: 100%;
-    height: auto;
-    animation: waterfall 10s infinite linear;
-}
-
 /* Personalized message section styles */
 .message-section {
     background-color: #fff;
@@ -68,14 +60,4 @@ footer {
     color: white;
     text-align: center;
     padding: 10px 0;
-}
-
-/* Keyframes for waterfall animation */
-@keyframes waterfall {
-    0% {
-        transform: translateY(-100%);
-    }
-    100% {
-        transform: translateY(100%);
-    }
 }
