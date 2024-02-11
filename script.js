@@ -3,12 +3,20 @@ function parallaxEffect() {
     const parallaxImages = document.querySelectorAll('.parallax img');
 
     window.addEventListener('scroll', function() {
-        parallaxImages.forEach(function(image) {
-            const scrollPosition = window.scrollY;
-            const imageOffset = image.offsetTop;
-            const distance = (scrollPosition - imageOffset) * 0.5;
+        const scrollPosition = window.scrollY;
+        const windowHeight = window.innerHeight;
 
-            image.style.transform = 'translateY(' + distance + 'px)';
+        parallaxImages.forEach(function(image, index) {
+            const imageOffset = image.offsetTop;
+            const distanceFromTop = imageOffset - scrollPosition;
+            const visibleThreshold = windowHeight * 0.7; // Adjust visibility threshold as needed
+
+            if (distanceFromTop < visibleThreshold) {
+                const distance = (scrollPosition - imageOffset) * 0.5;
+                image.style.transform = 'translateY(' + distance + 'px)';
+            } else {
+                image.style.transform = 'none'; // Reset transform if image is not visible
+            }
         });
     });
 }
