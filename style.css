@@ -28,23 +28,21 @@ h1 {
 
 /* Container styles */
 .container {
-    max-width: 800px;
+    max-width: 100%; /* Allow the container to fill the entire screen width */
     margin: 0 auto;
     text-align: center;
     padding: 20px;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
 /* Parallax images container */
 .parallax-images {
     display: flex;
-    overflow-x: auto; /* Allow horizontal scrolling if needed */
 }
 
 /* Parallax image */
 .parallax-image {
-    flex: 0 0 auto;
-    width: calc(100% / 3); /* Ensure each image takes up one-third of the container width */
-    height: auto;
+    flex: 1; /* Ensure each image takes up an equal amount of space */
     overflow: hidden;
 }
 
