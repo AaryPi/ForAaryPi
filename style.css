@@ -38,18 +38,20 @@ h1 {
 /* Parallax images container */
 .parallax-images {
     display: flex;
+    justify-content: flex-start; /* Justify images to the left */
 }
 
 /* Parallax image */
 .parallax-image {
-    flex: 1; /* Ensure each image takes up an equal amount of space */
     overflow: hidden;
 }
 
 .parallax-image img {
-    width: 100%;
+    width: auto;
     height: auto;
-    object-fit: cover; /* Cover the entire container, maintaining aspect ratio */
+    max-width: 100%; /* Ensure images don't exceed their original size */
+    max-height: 100vh; /* Ensure images don't exceed viewport height */
+    object-fit: contain; /* Maintain aspect ratio and fit within the container */
     transform: translateZ(0); /* Ensure hardware acceleration for smoother scrolling */
 }
 
