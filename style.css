@@ -9,6 +9,7 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background: linear-gradient(135deg, #f3d0c8, #ffffff); /* Gradient background */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
 /* Header styles */
@@ -30,7 +31,7 @@ h1 {
 .parallax-container {
     position: relative;
     overflow: hidden;
-    height: 500px; /* Adjust height as needed */
+    height: 100vh; /* Set the height to viewport height */
 }
 
 /* Parallax effect styles */
@@ -53,7 +54,6 @@ h1 {
     margin: 0 auto;
     text-align: center;
     padding: 20px;
-    overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
 /* Message section styles */
