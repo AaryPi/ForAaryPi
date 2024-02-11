@@ -37,21 +37,23 @@ h1 {
 
 /* Parallax images container */
 .parallax-images {
+    position: relative; /* Needed for absolute positioning of images */
     display: flex;
-    justify-content: flex-start; /* Justify images to the left */
+    overflow-x: hidden; /* Hide horizontal overflow */
 }
 
 /* Parallax image */
 .parallax-image {
+    position: relative;
+    width: 100%; /* Ensure each image takes up the full container width */
+    height: auto;
     overflow: hidden;
 }
 
 .parallax-image img {
-    width: auto;
+    width: 100%;
     height: auto;
-    max-width: 100%; /* Ensure images don't exceed their original size */
-    max-height: 100vh; /* Ensure images don't exceed viewport height */
-    object-fit: contain; /* Maintain aspect ratio and fit within the container */
+    object-fit: cover; /* Cover the entire container, maintaining aspect ratio */
     transform: translateZ(0); /* Ensure hardware acceleration for smoother scrolling */
 }
 
