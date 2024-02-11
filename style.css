@@ -44,6 +44,9 @@ h1 {
 .heart-image {
     max-width: 100%;
     height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
     animation: waterfall 10s infinite linear;
 }
 
@@ -72,7 +75,7 @@ footer {
 /* Keyframes for waterfall animation */
 @keyframes waterfall {
     0% {
-        transform: translateY(0);
+        transform: translateY(-100%);
     }
     100% {
         transform: translateY(100%);
