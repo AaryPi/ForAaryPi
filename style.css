@@ -1,49 +1,77 @@
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+/* Reset default margin and padding */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set body background */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #f9f9f9;
 }
 
+/* Header styles */
 header {
-    background-color: #f44336;
+    background: linear-gradient(to right, #ff4b2b, #ff416c);
     color: white;
     text-align: center;
     padding: 20px 0;
 }
 
+/* Title styles */
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+/* Container styles */
 .container {
     max-width: 800px;
     margin: 0 auto;
     text-align: center;
 }
 
+/* Heart image styles */
 .heart-container {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+    position: relative;
 }
 
 .heart-image {
     max-width: 100%;
     height: auto;
+    animation: pulse 2s infinite alternate;
 }
 
+/* Personalized message section styles */
 .message-section {
     background-color: #fff;
     border-radius: 10px;
-    padding: 20px;
+    padding: 30px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
 }
 
+/* Signature styles */
 .signature {
     margin-top: 20px;
 }
 
-.footer {
-    background-color: #333;
+/* Footer styles */
+footer {
+    background: linear-gradient(to right, #ff4b2b, #ff416c);
     color: white;
     text-align: center;
     padding: 10px 0;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+}
+
+/* Keyframes for heartbeat animation */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.1);
+    }
 }
