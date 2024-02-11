@@ -1,6 +1,9 @@
-window.addEventListener('scroll', function() {
-    let offset = window.pageYOffset;
-    document.querySelectorAll('.parallax-image').forEach(function(el, i) {
-        el.style.backgroundPositionY = -offset * 0.5 + 'px'; // Adjust the factor for parallax speed
-    });
-});
+// Function to log a message to the console
+function testFunction() {
+    console.log("JavaScript is working!");
+}
+
+// Call the testFunction when the page loads
+window.onload = function() {
+    testFunction();
+};
