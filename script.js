@@ -6,7 +6,7 @@ function parallaxEffect() {
         parallaxImages.forEach(function(image) {
             const scrollPosition = window.scrollY;
             const imageOffset = image.offsetTop;
-            const distance = (scrollPosition - imageOffset) * 0.5;
+            const distance = (scrollPosition - imageOffset) * 0.4; // Adjust the multiplier as needed
 
             image.style.transform = 'translateY(' + distance + 'px)';
         });
