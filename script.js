@@ -1,12 +1,12 @@
 // Function to handle parallax scrolling effect
 function parallaxEffect() {
-    const parallaxImages = document.querySelectorAll('.parallax-image');
+    const parallaxImages = document.querySelectorAll('.parallax img');
 
     window.addEventListener('scroll', function() {
         parallaxImages.forEach(function(image) {
             const scrollPosition = window.scrollY;
             const imageOffset = image.offsetTop;
-            const distance = (scrollPosition - imageOffset) * 0.4; // Adjust the multiplier as needed
+            const distance = (scrollPosition - imageOffset) * 0.5;
 
             image.style.transform = 'translateY(' + distance + 'px)';
         });
