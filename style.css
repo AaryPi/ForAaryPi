@@ -71,3 +71,13 @@ footer {
     text-align: center;
     padding: 10px 0;
 }
+
+/* Fade-in effect */
+.fade-in {
+    opacity: 0;
+    transition: opacity 0.8s ease;
+}
+
+.fade-in.visible {
+    opacity: 1;
+}
