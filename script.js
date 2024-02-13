@@ -14,30 +14,7 @@ function fadeInEffect() {
     });
 }
 
-// Function to handle parallax scrolling effect
-function parallaxEffect() {
-    const parallaxImages = document.querySelectorAll('.parallax-image');
-
-    window.addEventListener('scroll', function() {
-        parallaxImages.forEach(function(image) {
-            const scrollPosition = window.scrollY;
-            const imageOffset = image.offsetTop;
-            const distance = (scrollPosition - imageOffset) * 0.5;
-
-            image.style.transform = 'translateY(' + distance + 'px)';
-        });
-    });
-}
-
-// Function to play audio when the page loads
-function playAudio() {
-    const audio = new Audio('audio/your-song.mp3');
-    audio.play();
-}
-
-// Call the fadeInEffect, parallaxEffect, and playAudio functions when the page loads
+// Call the fadeInEffect function when the page loads
 window.onload = function() {
     fadeInEffect();
-    parallaxEffect();
-    playAudio();
 };
