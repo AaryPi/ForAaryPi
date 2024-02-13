@@ -14,7 +14,14 @@ function fadeInEffect() {
     });
 }
 
-// Call the fadeInEffect function when the page loads
+// Function to play audio when the page loads
+function playAudio() {
+    const audio = new Audio('audio/your-song.mp3');
+    audio.play();
+}
+
+// Call the fadeInEffect and playAudio functions when the page loads
 window.onload = function() {
     fadeInEffect();
+    playAudio();
 };
