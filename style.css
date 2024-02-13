@@ -18,6 +18,17 @@ body {
     color: #333; /* Dark gray text color */
     text-align: center;
     padding: 20px 0;
+    animation: headerBackgroundAnimation 5s infinite alternate; /* Apply animation */
+}
+
+/* Keyframe animation for the header background */
+@keyframes headerBackgroundAnimation {
+    0% {
+        background-position: left;
+    }
+    100% {
+        background-position: right;
+    }
 }
 
 /* Footer styles */
