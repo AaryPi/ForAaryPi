@@ -14,8 +14,8 @@ body {
 
 /* Header styles */
 .header {
-    background-color: #f4f4f4; /* Light gray background */
-    color: #333; /* Dark gray text color */
+    background: linear-gradient(to right, #ff4b2b, #ff416c);
+    color: white;
     text-align: center;
     padding: 20px 0;
     animation: headerBackgroundAnimation 5s infinite alternate; /* Apply animation */
@@ -69,19 +69,6 @@ body {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     margin-top: 30px; /* Adjust as needed */
     margin-bottom: 30px;
-}
-
-/* Signature styles */
-.signature {
-    margin-top: 20px;
-}
-
-/* Footer styles */
-footer {
-    background: linear-gradient(to right, #ff4b2b, #ff416c);
-    color: white;
-    text-align: center;
-    padding: 10px 0;
 }
 
 /* Fade-in effect */
