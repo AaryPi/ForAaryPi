@@ -14,7 +14,7 @@ function fadeInEffect() {
     });
 }
 
-// Function to play audio when the DOM content is loaded
+// Function to play audio when triggered by user interaction
 function playAudio() {
     const audio = new Audio('audio/your-song.mp3');
     audio.play();
@@ -23,5 +23,9 @@ function playAudio() {
 // Call the fadeInEffect function when the page loads
 document.addEventListener('DOMContentLoaded', function() {
     fadeInEffect();
+});
+
+// Event listener to play audio when the user interacts with the document
+document.addEventListener('click', function() {
     playAudio();
 });
